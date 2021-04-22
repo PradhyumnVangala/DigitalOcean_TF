@@ -1,4 +1,4 @@
-This terraform code will create one ansible server and kubernetes k8s_servers
+This terraform code will create one ansible server and server to deploy K8S
 This will deploy ansible on the ansible k8s_servers
 Investigating to see if kubernetes using kubespray can also be installed
 
