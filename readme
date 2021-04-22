@@ -1,3 +1,8 @@
 This terraform code will create one ansible server and kubernetes k8s_servers
 This will deploy ansible on the ansible k8s_servers
 Investigating to see if kubernetes using kubespray can also be installed
+
+Running instructions:
+Create a ssh key and upload the public key to your digitalocean account
+Terraform init from the directory
+Terraform plan -var "pvt_key=path to key"
