@@ -1,4 +1,3 @@
-#terraform apply -var "pvt_key=C:\Users\pvangala\Documents\MobaXterm\home\.ssh\id_rsa1"
 terraform {
   required_providers {
     digitalocean = {
