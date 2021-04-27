@@ -6,3 +6,4 @@ Running instructions:
 Create a ssh key and upload the public key to your digitalocean account
 Terraform init from the directory
 Terraform plan -var "pvt_key=path to key"
+Changing the resources only for the required resources to keep the cost low, uncomment required providers when needed
