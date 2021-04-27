@@ -80,6 +80,7 @@ resource "digitalocean_kubernetes_cluster" "nypv-k8s01" {
 #get your kubernetes configuration to use it in kubernetes
 data "digitalocean_kubernetes_cluster" "cluster_data"{
   name= "nypv-k8s01"
+  depends_on = [digitalocean_kubernetes_cluster.nypv-k8s01]
 }
 
 #define kubernetes config that was retrieved from digital ocean
@@ -124,7 +125,7 @@ resource "kubernetes_deployment" "myfirstdeployment" {
 
       spec {
         container {
-          image = "nginx:1.7.8"
+          image = "nginx"
           name  = "myfirstpod"
 
           resources {
